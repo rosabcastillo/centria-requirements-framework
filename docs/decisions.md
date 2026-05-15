@@ -22,6 +22,13 @@ Decisions that apply to all themes and teams. Theme-specific decisions live in `
 **Decided by:** PM + Pawanjit
 **Why:** Reduces external dependency. CareConnect is where clinical staff already work.
 
+### 2026-05 — Feature-level stories, not task-level stories
+**Decided:** Stories are written at feature level. One story covers a complete, cohesive user capability — including all scenarios, edge cases, and a thorough test plan. Sub-tasks are not separate stories.
+**Decided by:** Rosa (BA/PM)
+**Why:** In AI-assisted delivery, an AI session can implement an entire feature from one detailed spec. Task-level granularity was designed for human sprint planning — it creates overhead without value when Claude Code handles implementation. The depth that used to live across 10–15 micro-stories now lives in the AC and test plan of a single feature story.
+**Applies to:** All themes created after 2026-05. The Survey Builder theme (epic-level at theme level) is the legacy reference — not the model to follow.
+**Hierarchy:** Theme = product/release → Epic = feature area → Story = feature story (3–8 per epic).
+
 ### 2026-05 — Requirements live in Git, not Jira
 **Decided:** All specs, decisions, and test plans live in markdown files in the requirements repo. Jira is for status tracking and stakeholder visibility only. Jira ticket descriptions link to the story file path.
 **Decided by:** Rosa (BA/PM)
